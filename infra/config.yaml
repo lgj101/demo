@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cm-sms-adapter
+  namespace: default
+data:
+  server_addr: "http://paas-cce.prod.dcesg.cn"
+  username: "admin"
+  password: "P@ssw0rd"
+  cache_expire_time: "24"
+  sms_addr: "http://10.55.8.91/WebServer/SmsSend.asmx/MsSend"
+  sms_uid: "xnjk"
+  sms_pwd: "ztzqCOVER0902"
+  sms_send_num: "95538"
+  sms_os_org_name: "虚拟化平台"
+  sms_os_user_name: "虚拟化平台告警"
+  kube_conf_path: "/home/kubeconfig"
+
